@@ -1,0 +1,46 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+
+\title{Computing For Mathematics: Projectile Motion Of Darts}
+\author{Luke Sargent, Matthew Squire, Cameron Trew, Aron Russell}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+This project has an extremely trivial goal. Simply input 3 values relating to the throw of a dart
+- tilt angle, swivel ange and initial velocity. Then output the score of which is obtained, along with the
+relevant statistics. This project involves many areas of mathematics to solve.
+Primarily Mechanics and Geometry.
+
+
+\begin{itemize}\label{Glossary Of Terms}
+    \item \(\theta_\tau = Tilt angle from the horizontal, upwards\)
+    \item \(\theta_\sigma = Swivel angle from vertical, to the right/clockwise\)
+    \item \(R_x = Range Of Dart (in x direction)\)
+    \item \(H_y = Height Of Dart (in y direction)\)
+\end{itemize}
+
+\section{Statement Of Need}
+
+\section{State Of The Field}
+
+\section{Phase I - Projectile In 2D}
+We must first consider the 2-dimensional plane (x,y) in which our dart
+travels through. Doing, we can model the trajectory of the dart using projectile motion
+in order to obtain the range, height, and shift of the dart.We can say that air resistance of the dart is negligible.This can be done using the following equations:
+
+\begin{align}
+    R_x & = \frac{v_0sin(2\theta_\tau)}{2g}\\
+    H_y & = (Range_x)tan(\theta_\tau) - \frac{g(Range_x)^2}{2v_0cos{\theta_\tau}^2}\\
+    Shift_z & = \pm\sqrt{(Range_x)^2 - (x_0 - Board)^2}
+\end{align}
+
+\section{Phase II - Geometry Of Dartboard}
+Determining the score is precisely the same as determining the position at which the dart landed
+on the dartboard. Since we are going to obtain a position of the dart in polar form r, theta, we can
+replicate the techniques used to determine the modulus and argument of a complex number.
+However instead of being given a real and imaginary part, we are given a length in the y and z direction.
+Taking the bullseye to be the centre of origin, we apply the following to calculate r and theta:
+    
+\end{document}
